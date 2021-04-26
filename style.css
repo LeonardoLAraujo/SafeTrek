@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Times 'Times New Roman';
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(20, 20, 207);
+}
+
+/* Página Inicial */
+
+.cont-Ini h1{
+  text-align: left;
+  margin-top: 1%;
+  margin-left: 2%;
+  margin-bottom: 1%;
+}
+
+.cont-Ini p{
+  text-align: left;
+  padding-right: 1%;
+  margin-bottom: 1%;
+}
+
+.cont-Ini a{
+  color: black;
+  margin-left: 72%;
+}
+
+.cont-Ini a:hover{
+  color: rgb(25, 127, 243);
+  border-bottom: 1px rgb(25, 127, 243) solid;
+}
+
+
+/*Página de Versões */
+.cont-Ver h1{
+  text-align: left;
+  margin-top: 3%;
+  margin-left: 2%;
+  margin-bottom: 1%;
+  font-size: 36px;
+}
+
+.cont-Ver p{
+  text-align: left;
+  padding-right: 1%;
+  margin-bottom: 1%;
+}
+
+.cont-Ver h2{
+  margin-left: 3%;
+}
+
+/* Menu da Página */
+.menu{
+    background: rgb(25, 127, 243);
+    height: 80px;
+    width: 100%;
+  }
+  
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  
+  .menu .menuLateral{
+    float: right;
+    margin-right: 20px;
+  }
+  
+  .menu .menuLateral li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  
+  .menu .menuLateral li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+  }
+   
+  .menu .menuLateral li a:hover{
+    background: none;
+    color:white;
+    border: 2px white solid;
+}
+
+  .menu-btnI{
+    width: 40px;
+    height: 40px;
+   
+  }
+  
+  .check-btn{ 
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check{
+    display: none;
+  }
+  
+  @media only screen and (min-width: 900px) and (max-width: 1200px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+  
+    .media .menuLateral li a{
+        font-size: 16px;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px){
+    .check-btn {
+      display: block;
+    }
+    .menuLateral{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(25, 127, 243);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+  
+  @media only screen and (max-width: 400px){
+      label.logo{
+          font-size: 20px;
+          color: white;
+          padding: 0;
+          margin: 0;
+          padding-left: 2%;
+      }
+  }
+  
+  .menu .menuLateral li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  
+  .menu .menuLateral li a{
+      font-size: 30px;
+  }
+  
+  .menu .menuLateral li a:hover{
+      background: none;
+      color: white;
+      border: 2px white solid;
+  }
+  
+  #check:checked ~ .menuLateral{
+      left: 0;
+  }
+  }
+  
+  @media only screen and (max-width: 900px){
+    .check-btn {
+        display: block;
+    }
+    .menuLateral{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(8, 76, 155);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+  
+    @media only screen and (max-width: 400px){
+        /* Página Inicial */
+        .cont-Ini h1{
+          text-align: center;
+          margin-top: 5%;
+          margin-left: 1%;
+          margin-bottom: 2%;
+        }
+
+        .cont-Ini p{
+          text-align: left;
+          padding-right: 1%;
+        }
+
+        .cont-Ini a{
+          color: black;
+          margin-left: 66%;
+        }
+        
+        label.logo{
+            font-size: 10px;
+            color: white;
+            padding: 0;
+            margin: 0;
+            padding-left: 2%;
+        }
+
+        .logo a button{
+          margin-top: 20%;
+        }
+
+        .menu a .logo{
+          font-size: 30px;
+        }
+
+        /* Página da Versões*/
+        .cont-Ver h1{
+          text-align: center;
+          margin-top: 3%;
+          margin-right: 2%;
+          margin-bottom: 5%;
+          font-size: 36px;
+          border-bottom: 1px rgb(25, 127, 243) solid;
+        }
+        
+        .cont-Ver p{
+          text-align: left;
+          padding-right: 1%;
+          margin-bottom: 1%;
+        }
+        
+        .cont-Ver h2{
+          margin-left: 3%;
+        }
+
+        /* Imagem do Aplicativo */
+        .logoAPP{
+            width: 100px;
+            height: 100%;
+        }
+
+        button.btn-Download{
+            margin-top: 5%;
+            padding-left: 30%;
+            padding-right: 30%;
+            font-size: 18px;
+            margin-left: 1;
+        }
+
+        /* Descrição do Aplicativo */
+        div.descricaoAPP{
+            margin-top: 7%;
+            text-align: justify;
+        }
+
+        div.descricaoAPP-Requisitos{
+            margin-top: 9%;
+            font-size: 13px;
+            text-align: center;
+        }
+        
+        div.descricaoAPP-Requisitos h2{
+            font-size: 17px;
+            border: 1px rgb(25, 127, 243) solid;
+            margin-right: 1%;
+            text-align: left;
+        }
+
+        /* Comentario Sobre o Aplicativo */
+        .comentario h1{
+          padding-top: 10%;
+          margin-bottom: 3%;
+          text-align: center;
+          border-bottom: 1px rgb(25, 127, 243) solid;
+          margin-left: 4%;
+          margin-right: 4%;
+        }
+
+        /* Imagem da Empresa Logo */
+        .sobreNos img{
+          display: none;
+        }
+
+        .sobreNos h1{
+          padding-top: 10%;
+        }
+
+        .sobreNos p{
+          padding-top: 4%;
+          text-align: justify;
+          padding-right: 3%;
+        }
+
+        /* Fale Conosco */
+        .faleConosco h2{
+          margin-top: 5%;
+        }
+
+        .faleConosco p{
+          padding-top: 3%;
+        }
+  
+    }    
+  
+    @media only screen and (max-width: 507px){
+      label.logo{
+        font-size: 20px;
+      }
+
+      /* Imagem da Empresa Logo */
+      .sobreNos img{
+        display: none;
+      }
+    } 
+  
+    .menu .menuLateral li{
+        display: block;
+        margin: 50px 0;
+        line-height: 34px;
+    }
+  
+    .menu .menuLateral li a{
+        font-size: 20px;
+    }
+  
+    .menu .menuLateral li a:hover{
+        background: none;
+        color:white;
+    }
+  
+    #check:checked ~ .menuLateral{
+        left: 0;
+    }
+  }
+  
+  /*Logo do Aplicativo */
+  .logoAPP{
+      width: 110px;
+      height: 100%;
+      margin-left: 3%;
+      float: left;
+      padding-right: 2%;
+  }
+  
+  p{
+    margin-left: 3%; 
+    font-size: 20px;
+    margin-top: 1%;
+  }
+
+  .nomeAPP{
+    font-size: 25px;
+    margin-top: 3%;
+  }
+
+  /* Botão do Download */
+  .btn-Download{
+      margin-top: 1.3%;
+      margin-left: 13%;
+      padding-left: 3%;
+      padding-right: 3%;
+      padding-top: 0.3%;
+      padding-bottom: 0.3%;
+      cursor: pointer;
+      transition: .5s;
+      background-color: rgb(25, 127, 243);
+      color: white;
+      border-radius: 6px;
+      font-size: 18px;
+      border: 1px transparent solid;
+      font-weight: bold;
+  }
+
+  .btn-Download:hover{
+     background-color: rgb(20, 20, 207);
+  }
+
+/*Descrição do Aplicativo */
+.descricaoAPP{
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 2%;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.descricaoAPP-Requisitos{
+    margin-top: 3%;
+}
+
+.descricaoAPP-Requisitos h2{
+    font-size: 18px;
+    border: 1px rgb(25, 127, 243) solid;
+    margin-right: 68%;
+    
+}
+
+/* Página Sobre Nós */
+
+.sobreNos h1{
+  margin-top: 3%;
+  margin-left: 8%;
+  font-size: 30px;
+}
+
+.sobreNos p{
+  margin-left: 8%;
+  margin-right: 4%;
+  margin-top: 2%;
+  text-align: justify;
+}
+
+.sobreNos img{
+  float: right;
+  margin-right: 3%;
+  margin-top: 2%;
+}
+
+/* Fale Conosco */
+
+.tituloFale{
+  margin-left: 7.5%;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  font-size: 35px;
+  border-bottom: 1px rgb(25, 127, 243) solid;
+  margin-right: 7.5%;
+  text-align: center;
+}
+
+.faleConosco h2{
+  font-size: 20px;
+  margin-left: 7.5%;
+  text-align: left;
+  margin-right: 7%;
+}
+
+.faleConosco p{
+  margin-left:  7.5%;
+  margin-top: 3%;
+}
+
+/* Comentário da Página */
+
+.comentario h1{
+  margin-top: 6%;
+  margin-left: 3%;
+  margin-right: 2%;
+}
+
+#disqus_thread{
+  text-align: center;
+  margin: 3%;
+}
+
+.comentario a{
+  color: black;
+}
